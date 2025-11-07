@@ -9,11 +9,11 @@ PizzaType = input()
 
 if PizzaType == "cheese" or "sausage" or "pepperroni":
     PizzaSize = input("Okay what size do you want? We have Small, Medium, or Large\n")
-else: print("sorry but we don't have that we only have" + menu )
+else: PizzaType = input("sorry but we don't have that we only have" + menu )
     
 if PizzaSize == "small" or "medium" or "large":
     print("Ok")
-else: print("Sorry we don't have that we only have Small, Medium, or Large")
+else: PizzaSize = input("Sorry we don't have that we only have Small, Medium, or Large\n")
 
 if PizzaType == "cheese":
     pricetype = 5
