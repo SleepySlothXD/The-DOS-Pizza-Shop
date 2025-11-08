@@ -1,10 +1,11 @@
 print("Hello there welcome to the DOS Pizza imporium! Can i get your name for the order?\n")
 
+
 name = input()
 menu = str("Cheese Pizza, Starting at $7.75,\nSausage Pizza, Starting at $9.75,\nPepperroni Pizza, Starting at $12.75")
 print("Nice to meet you " + name + " Here is a menu just let me know what you would like when your ready\n\n" + menu )
 
-
+#Ordering
 PizzaType = input()
 
 if PizzaType == "cheese" or "sausage" or "pepperroni":
@@ -15,6 +16,7 @@ if PizzaSize == "small" or "medium" or "large":
     print("Ok")
 else: PizzaSize = input("Sorry we don't have that we only have Small, Medium, or Large\n")
 
+#Payment
 if PizzaType == "cheese":
     pricetype = 5
 elif PizzaType == "sausage":
