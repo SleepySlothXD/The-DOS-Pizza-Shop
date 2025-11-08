@@ -29,7 +29,7 @@ elif PizzaSize == "medium":
 elif PizzaSize == "large":
     price = pricetype + 12 
 
-payment = input("Okay for the " + PizzaSize + " " + PizzaType + " pizza, Your total is: $" + str(price) + "\nJust say Pay to confirm your order\n")
+payment = input("Okay for the " + PizzaSize + " " + PizzaType + " pizza, Your total is: $" + str(price) + "\nJust say Pay to confirm your order\nIF not order will be cancelled")
 
 if payment == "pay":
     print("ok your order will bet out in a moment")
