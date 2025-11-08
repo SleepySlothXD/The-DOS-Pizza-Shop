@@ -1,8 +1,8 @@
 print("Hello there welcome to the DOS Pizza imporium! Can i get your name for the order?\n")
 
 name = input()
-menu = str("Cheese, Sausage, Pepperroni")
-print("Nice to meet you " + name + " Here is a menu just let me know what you would like when your ready\n" + menu )
+menu = str("Cheese Pizza, Starting at $7.75,\nSausage Pizza, Starting at $9.75,\nPepperroni Pizza, Starting at $12.75")
+print("Nice to meet you " + name + " Here is a menu just let me know what you would like when your ready\n\n" + menu )
 
 
 PizzaType = input()
@@ -18,19 +18,19 @@ else: PizzaSize = input("Sorry we don't have that we only have Small, Medium, or
 if PizzaType == "cheese":
     pricetype = 5
 elif PizzaType == "sausage":
-    pricetype = 10
+    pricetype = 7
 elif PizzaType == "pepperroni":
-    pricetype = 12
+    pricetype = 10
 
 if PizzaSize == "small":
-    price = pricetype + 5
+    price = pricetype + 2.75
 elif PizzaSize == "medium":
-    price = pricetype + 10
+    price = pricetype + 5.25
 elif PizzaSize == "large":
-    price = pricetype + 12 
+    price = pricetype + 7.25 
 
-payment = input("Okay for the " + PizzaSize + " " + PizzaType + " pizza, Your total is: $" + str(price) + "\nJust say Pay to confirm your order\nIF not order will be cancelled")
+payment = input("Okay for the " + PizzaSize + " " + PizzaType + " pizza, Your total is: $" + str(price) + "\n\nJust say Pay to confirm your order. If not order will be cancelled")
 
 if payment == "pay":
-    print("ok your order will bet out in a moment")
-    print("2 minutes later\n" + PizzaSize + " " + PizzaType + " pizza for " + name + "!!!")
+    print("ok your order will bet out in a moment\n\n")
+    print("2 minutes later\n\n" + PizzaSize + " " + PizzaType + " pizza for " + name + "!!!")
