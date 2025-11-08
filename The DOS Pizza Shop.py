@@ -2,7 +2,7 @@ print("Hello there welcome to the DOS Pizza imporium! Can i get your name for th
 
 
 name = input()
-menu = str("Cheese Pizza, Starting at $7.75,\nSausage Pizza, Starting at $9.75,\nPepperroni Pizza, Starting at $12.75")
+menu = str("Cheese Pizza, Starting at $5.75,\nSausage Pizza, Starting at $7.75,\nPepperroni Pizza, Starting at $10.75")
 print("Nice to meet you " + name + " Here is a menu just let me know what you would like when your ready\n\n" + menu )
 
 #Ordering
@@ -25,11 +25,11 @@ elif PizzaType == "pepperroni":
     pricetype = 10
 
 if PizzaSize == "small":
-    price = pricetype + 2.75
+    price = pricetype + 0.75
 elif PizzaSize == "medium":
-    price = pricetype + 5.25
+    price = pricetype + 3.25
 elif PizzaSize == "large":
-    price = pricetype + 7.25 
+    price = pricetype + 5.25 
 
 payment = input("Okay for the " + PizzaSize + " " + PizzaType + " pizza, Your total is: $" + str(price) + "\n\nJust say Pay to confirm your order. If not order will be cancelled")
 
